@@ -11,10 +11,10 @@ import Navbar from './Component/Nav'
 function App() {
 
   return (
-    <Router>
+    <Router basename="/jamia-library">
       <Navbar />
       <Routes>
-      <Route path="/bca-department" element={<Home />} />
+      <Route path="/jamia-library" element={<Home />} />
         <Route path="/teachers" element={<Teachers />} />
         <Route path="/programs" element={<Programs />} />
         <Route path="/about" element={<Footer/>}/>
