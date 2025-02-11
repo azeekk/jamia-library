@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-
+import SkeletonLoader from "../../Component/Skeleton/Skeleton"
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -38,7 +38,7 @@ const Teachers = () => {
 
   return (
     <div className="teachers">
-      <h1 className="header">Teachers</h1>
+      <h2 className="header">Teachers</h2>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
@@ -60,11 +60,18 @@ const Teachers = () => {
         pagination={{clickable: true}}
         className="mySwiper"
       >
-        {data.map((teacher, index) => ( 
+        {loading
+          ? // Show 5 skeleton slides while loading
+            [...Array(5)].map((_, index) => (
+              <SwiperSlide key={index}>
+                <SkeletonLoader />
+              </SwiperSlide>
+            ))
+          :data.map((teacher, index) => (   
           <SwiperSlide key={index}>
             <div className="teachercard">
             <div className="teacherimage">
-           <img src={teacher.imageUrl} alt={`${teacher.name}'s photo`} />
+           <img src={teacher.imageUrl} alt={`${teacher.name}'s photo`} loading="lazy" />
            </div>
            <div className="teacherheading">
             <h2 className="heading1">{teacher.name}</h2>
