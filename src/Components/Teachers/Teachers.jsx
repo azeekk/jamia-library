@@ -23,9 +23,9 @@ const Teachers = () => {
     axios
     .get("https://bca-department-backend-production.up.railway.app/api/collections") // Replace with your actual API endpoint
     .then((response) => {
-      const bcaTeachers = response.data.BCA;
-      console.log(bcaTeachers);
-      setData(bcaTeachers);
+      const librarians = response.data.Library;
+      console.log(librarians);
+      setData(librarians);
       setLoading(false);
     })
     .catch((error) => {
@@ -38,7 +38,7 @@ const Teachers = () => {
 
   return (
     <div className="teachers">
-      <h2 className="header">Teachers</h2>
+      <h2 className="header">Librarians</h2>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
