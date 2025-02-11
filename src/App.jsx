@@ -11,7 +11,7 @@ import Navbar from './Component/Nav'
 function App() {
 
   return (
-    <Router basename="/jamia-library">
+    <Router>
       <Navbar />
       <Routes>
       <Route path="/jamia-library" element={<Home />} />
