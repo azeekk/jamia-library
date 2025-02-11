@@ -1,0 +1,73 @@
+.Navigation a {
+    margin-top: 30px;
+    padding-right: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: inherit; 
+}
+
+.Navigation {
+    width: 100%;
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+}
+
+.ul {
+    margin-top: 10px;
+}
+
+
+@media (max-width: 414px) {
+    .homeli {
+        /* padding-right: 20px; */
+        font-size: 10px;
+        padding: 2px;
+        border-radius: 10px;
+        background-color:#062659 ;
+        margin-right: 10px;
+        color: white;
+    }
+
+    .teachersli {
+        font-size: 10px;
+        padding: 2px;
+        border-radius: 10px;
+        background-color:#062659 ;
+        margin-right: 10px;
+        color: white;
+    }
+
+    .programsli {
+        font-size: 10px;
+        padding: 2px;
+        border-radius: 10px;
+        background-color:#062659 ;
+        margin-right: 10px;
+        color: white;
+    }
+
+    .aboutli {
+        font-size: 10px;
+        padding: 2px;
+        border-radius: 10px;
+        background-color:#062659 ;
+        margin-right: 10px;
+        color: white;
+    }
+
+    .homeli a {
+        margin-left: 20px;
+    }
+
+    .teachersli a {
+        margin-left: 20px;
+    }
+
+    .programsli a {
+        margin-left: 20px;
+    }
+
+    .aboutli a {
+        margin-left: 20px;
+    }
+}

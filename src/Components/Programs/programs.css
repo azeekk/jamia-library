@@ -1,0 +1,152 @@
+.programs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+.section {
+    width:500px;
+    height: 400px;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    border-top-left-radius: 20px;
+}   
+
+.bottom {
+    background-color: #062659;
+    height: 50%;
+    
+}   
+
+.video1 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.program_heading {
+    padding-top: 30px;
+    margin-top: 10px;
+    color: white;
+    margin-left: 20px;
+}
+
+.program_paragraph {
+    color:white;
+    margin-left: 20px;
+}
+
+.programheader {
+    margin-bottom: 50px;
+    color:black ;
+}
+
+@media (max-width: 768px) {
+    .programs {
+      flex-direction: column; /* Keep vertical stacking for small screens */
+      height: 100vh; /* Let the height adjust to content */
+      padding: 20px;
+    }
+  
+    .section {
+      width: 90%; /* Adjust section width to fit smaller screens */
+      height: auto; /* Allow height to adapt */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      
+    }
+  
+    .top {
+      height: auto; /* Let height adjust based on content */
+      border-top-left-radius: 10px; /* Reduce border radius for smaller screens */
+    }
+  
+    .bottom {
+      margin-top: -59px;
+      width: 500px;
+      height: auto; /* Let height adjust */
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      padding: 10px;
+    }
+  
+    .video1 {
+      height: auto; /* Ensure the video scales properly */
+      width: 100%;
+    }
+  
+    .program_heading {
+      padding-top: 15px; /* Reduce padding for small screens */
+      font-size: clamp(1rem, 2.5vw, 1.5rem); /* Make font size adaptive */
+      margin-top: 5px;
+      margin-left: 0; /* Center align heading */
+      text-align: center;
+    }
+  
+    .program_paragraph {
+      font-size: clamp(0.8rem, 2vw, 1rem); /* Adjust text size */
+      margin-left: 0; /* Center align paragraph */
+      text-align: center;
+    }
+  
+    .programheader {
+      font-size: clamp(1.5rem, 3vw, 2rem); /* Adjust header font size */
+      text-align: center;
+      margin-bottom: 20px; /* Adjust margin */
+      padding: 10px;
+    }
+  }
+
+  /*responsive for 414 screen */
+
+  @media (max-width: 414px) {
+
+    .video1 {
+      margin-bottom: 59px;
+    }
+    .video1 video {
+      width: 300px;
+      height: auto;
+    }
+
+    .programs {
+      height: 100vh;
+    }
+
+    .section {
+      height: 100%;
+    }
+
+    .bottom {
+      width: 300px;
+      height: auto;
+    }
+  }
+
+
+  /*responsive for 360 screen */
+
+  @media (max-width: 360px) {
+    .video1 video {
+      width: 300px;
+      height: auto;
+    }
+
+    .bottom {
+      width: 300px;
+      height: auto;
+    }
+  }

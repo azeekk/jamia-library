@@ -1,0 +1,416 @@
+.spotlight {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+
+.image {
+    height: 58px;
+    width: 55px;
+}
+
+.header {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    width: 100%;
+    display: flex;
+}
+
+.right {
+    width: 100%;
+}
+
+.headercolor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 66px;
+    color:black;
+    background-color: #062659;
+    border-radius: 20px;
+}
+.img{
+    height: 66px;
+    width: 80px;
+    position: absolute;
+    background-color: white;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading {
+   margin-left: 88px;
+   width: 200px;
+   font-size: 14px;
+   color:white;
+}   
+
+.ul{
+    list-style: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    height: 60px;
+    width: 500px;
+    background-color: #E9E9E98A;
+    border-radius: 20px;
+}
+.homeli {
+    font-weight: bold;
+    padding-right: 40px;
+}
+.teachersli {
+    font-weight: bold;
+    padding-right: 40px;
+}
+.programsli {
+    font-weight: bold;
+    padding-right: 40px;
+}
+.aboutli {
+    font-weight: bold;
+    padding-right: 40px;
+}
+.middle{
+    height: 65%;
+    display: flex;
+    align-items: center;
+}
+.bca {
+    color: #062659;
+    margin-left: 100px;
+    width: 660px;
+    text-align: center;
+    font-size: 100px;
+}
+.strength {
+    background-color: #062659;
+    height: 26%;
+}
+.video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 70px;
+    top: 150px; 
+    height: 530px;
+    width: 570px;
+    background-color: #D5D5D54F;
+    border-radius:20px;
+}
+
+@media (max-width: 768px) {
+    .spotlight {
+      height: auto; /* Allow height to adapt */
+      padding: 20px;
+    }
+  
+    .header {
+      margin: 10px 0;
+      display: flex;
+      flex-direction: row;
+
+    }
+  
+    .left, .right {
+      width: 100%;
+      justify-content: center; /* Center align for smaller screens */
+    }
+  
+    .headercolor {
+      font-size: clamp(0.8rem, 1.5vw, 1rem); /* Adjust font size */
+      padding: 10px 20px;
+      height: 62px;
+    }
+  
+    .img {
+      width: 56px;
+      height: 59px;
+      top: 41px;
+      left: 44px;
+    }
+  
+    .image {
+      height: 46px;
+      width: 46px;
+    }
+    .heading {
+      margin-left: 0;
+      text-align: center; /* Center the text */
+      width: auto;
+      font-size: clamp(12px, 2vw, 16px);
+    }
+  
+    .Navigation {
+      width: 90%;
+      height: auto;
+      padding: 10px;
+      flex-wrap: wrap; /* Wrap navigation items if needed */
+      justify-content: space-around;
+    }
+  
+    .middle {
+      flex-direction: column; /* Stack elements vertically */
+      height: auto;
+      padding: 20px;
+    }
+  
+    .bca {
+      font-size: clamp(30px, 8vw, 50px); /* Scale text size */
+      margin-left: 0; /* Center align */
+      text-align: center;
+      width: auto;
+    }
+  
+    .video {
+      position: static; /* Remove absolute positioning */
+      height: auto;
+      width: 90%;
+      margin: 20px auto;
+    }
+  
+  }
+
+     /* Styles for very small Android phones under 360px */
+
+  @media (max-width: 414px) {
+
+    .video video {
+      width: 400px;
+      height: auto;
+      
+    }
+    
+    .spotlight {
+      width: 100%;
+      height: auto; /* Allow height to adapt */
+      padding: 20px;
+    }
+  
+    .header { 
+      margin: 10px 0;
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .left, .right {
+      width: 100%;
+    }
+  
+    .headercolor {
+      width: 100px; /* Let the button width adjust dynamically */
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: -22px;
+
+    }
+  
+    .img {
+      height: 32px;
+      width: 40px;
+      left: 10px;
+      top: 100px;
+    }
+  
+    .img img {
+      height: 27px;
+      width: 27px;
+    }
+    .heading {
+      margin-left: 0;
+      text-align: center; /* Center the text */
+      width: auto;
+      font-size:7px;
+      margin-bottom: 0;
+    }
+  
+    .Navigation {
+      width: 90%;
+      height: auto;
+      padding: 10px;
+      flex-wrap: wrap; /* Wrap navigation items if needed */
+      justify-content: space-around;
+    }
+  
+    .middle {
+      flex-direction: column; /* Stack elements vertically */
+      height: auto;
+      padding: 20px;
+    }
+  
+    .bca {
+      font-size: clamp(30px, 8vw, 50px); /* Scale text size */
+      margin-left: 0; /* Center align */
+      text-align: center;
+      width: auto;
+    }
+  
+    .video {
+      position: static; /* Remove absolute positioning */
+      height: auto;
+      width: 90%;
+      margin: 20px auto;
+    }
+  
+    .strength {
+      height: auto; /* Let the height adjust to content */
+      padding: 20px;
+    }
+
+    .homeli{
+      padding-right: 20px;
+      font-size: 10px;
+    }
+
+    .teachersli{
+      padding-right: 20px;
+      font-size: 10px;
+    }
+
+    .programsli{
+      padding-right: 20px;
+      font-size: 10px;
+    }
+    .aboutli{
+      padding-right: 20px;
+      font-size: 10px;
+    }
+
+  }
+
+
+  
+   /* Styles for very small Android phones under 360px */
+
+  @media (max-width: 360px) {
+    
+    .video video {
+      width: 300px;
+      height: auto;
+      
+    }
+    
+    .spotlight {
+      width: 100%;
+      height: auto; /* Allow height to adapt */
+      padding: 20px;
+    }
+  
+    .header { 
+      margin: 10px 0;
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .left, .right {
+      width: 100%;
+    }
+  
+    .headercolor {
+      width: 100px; /* Let the button width adjust dynamically */
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 42px;
+
+    }
+  
+    .img {
+      height: 32px;
+      width: 40px;
+      left: 8px;
+      top: 47px;
+    }
+  
+    .img img {
+      height: 27px;
+      width: 27px;
+    }
+    .heading {
+      margin-left: 0;
+      text-align: center; /* Center the text */
+      width: auto;
+      font-size:7px;
+      margin-bottom: 0;
+    }
+  
+    .Navigation {
+      width: 90%;
+      height: auto;
+      padding: 10px;
+      flex-wrap: wrap; /* Wrap navigation items if needed */
+      justify-content: space-around;
+    }
+  
+    .middle {
+      flex-direction: column; /* Stack elements vertically */
+      height: auto;
+      padding: 20px;
+    }
+  
+    .bca {
+      font-size: clamp(30px, 8vw, 50px); /* Scale text size */
+      margin-left: 0; /* Center align */
+      text-align: center;
+      width: auto;
+    }
+  
+    .video {
+      position: static; /* Remove absolute positioning */
+      height: auto;
+      width: 90%;
+      margin: 20px auto;
+    }
+  
+    .strength {
+      height: auto; /* Let the height adjust to content */
+      padding: 20px;
+    }
+
+    .homeli{
+      padding-right: 20px;
+      font-size: 10px;
+    }
+
+    .teachersli{
+      padding-right: 20px;
+      font-size: 10px;
+    }
+
+    .programsli{
+      padding-right: 20px;
+      font-size: 10px;
+    }
+    .aboutli{
+      padding-right: 20px;
+      font-size: 10px;
+    }
+
+  }

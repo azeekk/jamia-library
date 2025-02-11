@@ -1,0 +1,161 @@
+.teachers {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:#062659;
+    color: white;
+}
+.swiper {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none!important;
+  }
+  
+  .swiper-slide img {
+    height: 300px;
+    width: 300px;
+
+  } 
+
+  .heading1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+  }
+
+  .heading2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+  }
+  .teachercard {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 300px;
+    position: relative;
+    box-shadow: none;
+  }
+
+  .teacherimage {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin-top: -55px;
+    position: absolute;
+  } 
+
+  .teacherheading {
+    position: absolute;
+    margin-top: 45px;
+    top: 200px;
+    left: 185px;
+  } 
+  
+  .header{
+    margin-bottom: 50px ;
+    align-self: flex-start;
+  }
+
+  /* responsive for 768 */
+
+  @media (max-width: 768px) {
+  
+    .swiper-slide {
+      width: 90%; /* Adjust width for smaller screens */
+      display: flex;
+      flex-direction: column;
+    }
+
+    .swiper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .teachercard {
+      flex-direction: column;
+      width: 500px;
+      height: 300px;
+      position: relative;
+      box-shadow: none;
+    }
+  
+    .teacherimage {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50%; /* Adjust image size */
+      width:  100%;
+      margin-top: 0; /* Avoid negative margins on smaller screens */
+      border-radius: 10px;
+    }
+  
+    .teacherheading {
+      top: 150px; /* Adjust placement */
+      left: 50%; /* Center align */
+      transform: translateX(-50%);
+      margin-top: 85px;
+    }
+  
+    .header {
+      align-self: center; /* Center align on smaller screens */
+      margin-bottom: 20px;
+    }
+  
+    .heading1, .heading2 {
+      font-size: 1.5rem; /* Adjust text size */
+      text-align: center;
+    }
+  }
+  
+
+  @media (max-width: 414px) {
+
+    .teachercard {
+      display: flex;
+      flex-direction: column;
+      align-items: center;  
+      width: 300px;
+      height: 200px;
+      position: relative;
+      box-shadow: none;
+    }   
+      
+    .teacherimage {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50%; /* Adjust image size */
+      width:  80%;
+      margin-top: 0; /* Avoid negative margins on smaller screens */
+      border-radius: 10px;
+    }
+    .heading1 {
+      font-size: 20px;
+      font-style: italic;
+    }
+    .heading2 {
+      font-size: 15px;
+    }
+  } 
